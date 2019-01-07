@@ -2,9 +2,9 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  lun. 07 jan. 2019 à 10:33
--- Version du serveur :  10.1.36-MariaDB
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  lun. 07 jan. 2019 à 09:44
+-- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -28,34 +28,16 @@ SET time_zone = "+00:00";
 -- Structure de la table `data`
 --
 
-CREATE TABLE `data` (
+DROP TABLE IF EXISTS `data`;
+CREATE TABLE IF NOT EXISTS `data` (
   `destinataire` varchar(255) NOT NULL,
   `expediteur` varchar(255) NOT NULL,
-  `url-fichier` varchar(535) NOT NULL,
-  `nomfichier` varchar(255) NOT NULL,
+  `url_fichier` varchar(535) NOT NULL,
+  `nom_fichier` varchar(255) NOT NULL,
   `date` date NOT NULL,
-  `id` int(11) NOT NULL
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Index pour les tables déchargées
---
-
---
--- Index pour la table `data`
---
-ALTER TABLE `data`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `data`
---
-ALTER TABLE `data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
