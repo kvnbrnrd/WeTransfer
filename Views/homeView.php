@@ -12,32 +12,49 @@
     <script src="Assets/JS/main.js"></script>
 </head>
 <body>
-        <div class="container">
-            <form id="contact" action="resultat" method="post">
-                <h3>R&M Transfer</h3>
-                <h4>Transférez vos fichiers</h4>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" />
-                        <label for="email" id="email" class="mdl-textfield__label">Votre email</label>
-                        <p class="errorMessage"></p>
-                </div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text"/>
-                        <label for="destinataire" id="destinataire" class="mdl-textfield__label">Envoyer à</label>
-                        <p class="errorMessage"></p>
-                </div>
-                <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
-                    <i class="material-icons">attach_file</i><input type="file" id="uploadBtn">
-                </div>
-                <div>
-                    <fieldset>
-                    <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        Transférer
+    <div class="container">
+        <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
+
+            <h3>R&M Transfer</h3>
+            <h4>Transférez vos fichiers</h4>
+
+                <!-- Email Expediteur -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <label for="email" id="email" class="mdl-textfield__label">Votre email</label>
+                <input class="mdl-textfield__input" type="text">
+                <p class="errorMessage"></p>
+            </div>
+
+                <!-- Email Destinataire -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <label for="destinataire" id="destinataire" class="mdl-textfield__label">Email destinataire</label>
+                <input class="mdl-textfield__input" type="text"/>
+                <p class="errorMessage"></p>
+            </div>
+
+                <!-- Le champ nom du fichier -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <label for="up" id="fileName" class="mdl-textfield__label">Nom du fichier</label>
+                <input class="mdl-textfield__input" type="text" name="fileName">
+                <p class="errorMessage"></p>
+            </div>
+
+                <!-- Le bouton permettant de linker le fichier -->
+            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+                <i class="material-icons">attach_file</i>
+                <input type="file" name="fichier_upload">
+            </div>
+
+                <!-- Le bouton envoyer -->
+            <div> 
+                <fieldset>
+                        <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
                     </button>
                 </fieldset>
-                </div>
-        </div>
-            </form>  
+            </div>
 
+        </form>  
+    </div> <!-- Fin div container -->
+    
 </body>
 </html>

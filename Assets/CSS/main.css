@@ -10,7 +10,7 @@ html {
       font-size: 12px;
       line-height: 30px;
       color: #777;
-      background: #ba68c8;
+      background: #e6e6e6;
   }
   
   .mdl-button--file input {
@@ -86,4 +86,4 @@ html {
   
     .errorMessage {
         color:red;
-       
+    }
