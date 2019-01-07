@@ -17,7 +17,7 @@
                 <h3>
                     <img id="logo" class="logo" src="Assets/images/logo.png">
                 </h3>
-                <h4>Transférez vos fichiers</h4>
+                <h4>Transférez vos fichiers, simplement.</h4>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" />
                         <label for="email" id="email" class="mdl-textfield__label">Votre email</label>
