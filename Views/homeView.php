@@ -13,7 +13,7 @@
 </head>
 <body>
         <div class="container">
-            <form id="contact" action="page.php" method="post">
+            <form id="contact" action="resultat" method="post">
                 <h3>R&M Transfer</h3>
                 <h4>Transférez vos fichiers</h4>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -36,6 +36,7 @@
                     </button>
                 </fieldset>
                 </div>
+        </div>
             </form>  
 
 </body>
