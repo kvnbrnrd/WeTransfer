@@ -9,8 +9,10 @@ html {
       font-weight: 100;
       font-size: 12px;
       line-height: 30px;
-      color: #777;
-      background: #ba68c8;
+      /* color: #777; */
+      background-image : url("../Images/rick1.png");
+      background-repeat: no-repeat;
+      overflow-y: hidden;
   }
   
   .mdl-button--file input {
@@ -42,6 +44,12 @@ html {
       padding: 0;
     }
     
+
+    #logo
+    {
+      max-width: 350px;
+      padding-bottom: 20px;
+    }
    
     .container {
       max-width: 400px;

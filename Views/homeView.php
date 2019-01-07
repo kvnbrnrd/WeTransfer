@@ -14,7 +14,9 @@
 <body>
         <div class="container">
             <form id="contact" action="resultat" method="post">
-                <h3>R&M Transfer</h3>
+                <h3>
+                    <img id="logo" class="logo" src="Assets/images/logo.png">
+                </h3>
                 <h4>Transférez vos fichiers</h4>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" />
