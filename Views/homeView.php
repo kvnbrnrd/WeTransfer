@@ -12,6 +12,15 @@
     <script src="Assets/JS/main.js"></script>
 </head>
 <body>
+
+
+
+ 
+    
+
+
+
+
     <div class="container">
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
@@ -42,10 +51,13 @@
             </div>
 
                 <!-- Le bouton permettant de linker le fichier -->
-            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
-                <i class="material-icons">attach_file</i>
+                
+            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file ">
+                
+                <i class="material-icons">attach_file</i> 
                 <input type="file" name="fichier_upload">
             </div>
+                
 
                 <!-- Le bouton envoyer -->
             <div> 
