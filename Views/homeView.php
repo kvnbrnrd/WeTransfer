@@ -27,7 +27,7 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label>
                 <!-- <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label> -->
-                <input class="mdl-textfield__input" type="text" id="mailE">
+                <input class="mdl-textfield__input" type="text" id="mailE" name="expediteur">
                 <p class="errorMessage"></p>
             </div>
 
@@ -35,7 +35,7 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label>
                 <!-- <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label> -->
-                <input class="mdl-textfield__input" type="text" id="mailD"/>
+                <input class="mdl-textfield__input" type="text" id="mailD" name="destinataire"/>
                 <p class="errorMessage"></p>
             </div>
 
