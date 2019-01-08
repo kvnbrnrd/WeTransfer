@@ -1,3 +1,14 @@
+var mailD = document.getElementById("mailD");
+var mailE = document.getElementById("mailE");
+
+var popper = new Popper(mailD, onPopper, {
+    placement: 'right'
+});
+var popper = new Popper(mailE, onPopper, {
+    placement: 'right'
+});
+
+
 document.getElementById("uploadBtn").onchange = function () {
     document.getElementById("uploadFile").value = this.files[0].name;
 };

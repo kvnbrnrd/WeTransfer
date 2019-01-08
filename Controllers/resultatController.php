@@ -1,7 +1,5 @@
 <?php
 
-
-
 var_dump($_POST['fileName']);
 var_dump($_FILES);
 
