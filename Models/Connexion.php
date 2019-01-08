@@ -1,12 +1,12 @@
 <?php
 
 $host = 'localhost';
-	$db = 'XXXXXXX';
+	$db = 'wetransfer';
 	$user ='root';
 	$pass = '';
 	$charset = 'utf8mb4';
 
-$dbh = "mysql:host=$host;dbname=$db;charset=$charset";
+$bdd = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -15,7 +15,7 @@ $options = [
 ];
 
 try {
-    $dbh = new PDO($dbh, $user, $pass, $options);
+    $bdd = new PDO($bdd, $user, $pass, $options);
 }
 catch (PDOException $e) {
     echo 'Connexion échouée : ' . $e->getMessage();

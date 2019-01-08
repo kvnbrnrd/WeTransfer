@@ -14,14 +14,6 @@
 </head>
 <body>
 
-
-
- 
-<!-- <a href="#" id="btnanglais" onclick="anglais">Click Me</a><br/> -->
-
-
-
-
     <div class="container">
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
@@ -58,7 +50,7 @@
                 <!-- Le bouton permettant de linker le fichier -->
             <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
                 <i class="material-icons ">attach_file</i>
-                <input type="file" name="fichier_upload[]" multiple="multiple">
+                <input type="file" name="fichier_upload" multiple="multiple">
             </div>
                 
 
