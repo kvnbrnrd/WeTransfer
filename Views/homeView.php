@@ -29,12 +29,12 @@
                 <img class="logo" id="logo" src="Assets/images/logo.png">
             </h3>
             <h4 class="francais">Transférez vos fichiers, simplement.</h4>
-            <h4 class="anglais">Transfer your file, easily.</h4>
+            <!-- <h4 class="anglais">Transfer your file, easily.</h4> -->
 
                 <!-- Email Expediteur -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label>
-                <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label>
+                <!-- <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label> -->
                 <input class="mdl-textfield__input" type="text" id="mailE">
                 <p class="errorMessage"></p>
             </div>
@@ -42,7 +42,7 @@
                 <!-- Email Destinataire -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label>
-                <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label>
+                <!-- <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label> -->
                 <input class="mdl-textfield__input" type="text" id="mailD"/>
                 <p class="errorMessage"></p>
             </div>
@@ -50,7 +50,7 @@
                 <!-- Le champ nom du fichier -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="up" id="fileName" class="mdl-textfield__label francais">Nom du fichier</label>
-                <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label>
+                <!-- <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label> -->
                 <input class="mdl-textfield__input" type="text" name="fileName">
                 <p class="errorMessage"></p>
             </div>
@@ -67,8 +67,8 @@
                 <fieldset>
                         <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
                     </button>
-                    <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="anglais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transfer
-                    </button>
+                    <!-- <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="anglais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transfer
+                    </button> -->
                 </fieldset>
             </div>
 
@@ -77,23 +77,23 @@
 
     <script type="text/javascript">
 
-    var Anglais = document.getElementsByClassName("anglais");
-    var BtnAnglais = document.getElementById("btnanglais");
+    // var Anglais = document.getElementsByClassName("anglais");
+    // var BtnAnglais = document.getElementById("btnanglais");
    
-    BtnAnglais.addEventListener("click",function() {
-        anglais();
-    });
+    // BtnAnglais.addEventListener("click",function() {
+    //     anglais();
+    // });
 
-    function anglais(){
-        console.log(Anglais);
-        for (i =0; i<10000; i++){
-            Francais.style.visibility['i']="hidden";
-         Francais.style.display['i']="none";
-        Anglais.style.visibility['i']="visible";
-        Anglais.style.display['i']="visible";
+    // function anglais(){
+    //     console.log(Anglais);
+    //     for (i =0; i<10000; i++){
+    //         Francais.style.visibility['i']="hidden";
+    //      Francais.style.display['i']="none";
+    //     Anglais.style.visibility['i']="visible";
+    //     Anglais.style.display['i']="visible";
         
-        }
-    };
+    //     }
+    // };
 
     // var Francais = document.getElementByClassName("francais");
     // var BtnFrancais = document.getElementById("btnfrancais");
