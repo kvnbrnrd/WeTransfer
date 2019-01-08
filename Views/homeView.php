@@ -17,7 +17,7 @@
 
 
  
-    
+<!-- <a href="#" id="btnanglais" onclick="anglais">Click Me</a><br/> -->
 
 
 
@@ -29,7 +29,7 @@
                 <img class="logo" id="logo" src="Assets/images/logo.png">
             </h3>
             <h4 class="francais">Transférez vos fichiers, simplement.</h4>
-            <h4 class="anglais">Transfer your file easily</h4>
+            <h4 class="anglais">Transfer your file, easily.</h4>
 
                 <!-- Email Expediteur -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -75,6 +75,36 @@
         </form>  
     </div> <!-- Fin div container -->
 
+    <script type="text/javascript">
 
+    var Anglais = document.getElementsByClassName("anglais");
+    var BtnAnglais = document.getElementById("btnanglais");
+   
+    BtnAnglais.addEventListener("click",function() {
+        anglais();
+    });
+
+    function anglais(){
+        console.log(Anglais);
+        for (i =0; i<10000; i++){
+            Francais.style.visibility['i']="hidden";
+         Francais.style.display['i']="none";
+        Anglais.style.visibility['i']="visible";
+        Anglais.style.display['i']="visible";
+        
+        }
+    };
+
+    // var Francais = document.getElementByClassName("francais");
+    // var BtnFrancais = document.getElementById("btnfrancais");
+    // BtnFrancais.addEventListener("click",function francais());
+    
+    // function francais(){
+    //     Francais.style.visibility="hidden";
+    //     Francais.style.display="none";
+    // }
+    
+    </script>
 </body>
+
 </html>
