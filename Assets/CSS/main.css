@@ -22,7 +22,10 @@ html {
         animation: slide 40s infinite;
   }
   
-
+  header
+  {
+    display: none;
+  }
 
 
   /* *********************debut slider***************** */
@@ -161,12 +164,28 @@ html {
         font-weight: 100;
         font-size: 12px;
         overflow-y: hidden;
+        overflow-x: hidden;
       }
   
-      #logo
+      #logoH
       {
+        padding: 20px;
         max-width: 300px;
         padding-bottom: 20px;
+      }
+
+      #logo
+      {
+        display: none;
+      }
+
+      header
+      {
+        display: block;
+        position: fixed;
+        top: 0;
+        background : #303030;
+        width: 100%;
       }
   
       .container {
