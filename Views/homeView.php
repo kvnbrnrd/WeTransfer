@@ -52,17 +52,9 @@
             </div>
 
                 <!-- Le bouton permettant de linker le fichier -->
-<<<<<<< HEAD
             <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
                 <i class="material-icons">attach_file</i>
                 <input type="file" name="fichier_upload[]" multiple="multiple">
-=======
-                
-            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file ">
-                
-                <i class="material-icons">attach_file</i> 
-                <input type="file" name="fichier_upload">
->>>>>>> 6cf946d685589cbd56937033d16f28605ecd43df
             </div>
                 
 
