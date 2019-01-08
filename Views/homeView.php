@@ -15,8 +15,10 @@
     <div class="container">
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
-            <h3>R&M Transfer</h3>
-            <h4>Transférez vos fichiers</h4>
+            <h3>
+                <img class="logo" id="logo" src="Assets/images/logo.png">
+            </h3>
+            <h4>Transférez vos fichiers, simplement.</h4>
 
                 <!-- Email Expediteur -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
