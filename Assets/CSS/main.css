@@ -59,7 +59,7 @@ html {
 }
 /* ****************************fin slider**************************** */
 
-
+/* Classe anglais et francais qui switch au click du bouton en js */
 .anglais{
   display:none;
   visibility: hidden;
