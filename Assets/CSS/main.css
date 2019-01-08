@@ -60,7 +60,14 @@ html {
 /* ****************************fin slider**************************** */
 
 
-
+.anglais{
+  display:none;
+  visibility: hidden;
+}
+.francais{
+  display:visible;
+  visibility:visible;
+}
 
 
 
