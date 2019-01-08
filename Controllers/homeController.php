@@ -1,4 +1,5 @@
 <?php
+include('Models/homeModel.php');
 
 
 

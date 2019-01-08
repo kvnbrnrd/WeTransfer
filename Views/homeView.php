@@ -23,14 +23,14 @@
                 <!-- Email Expediteur -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label">Votre email</label>
-                <input class="mdl-textfield__input" type="text">
+                <input class="mdl-textfield__input" type="text" name="expediteur">
                 <p class="errorMessage"></p>
             </div>
 
                 <!-- Email Destinataire -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label">Email destinataire</label>
-                <input class="mdl-textfield__input" type="text"/>
+                <input class="mdl-textfield__input" type="text" name="destinataire"/>
                 <p class="errorMessage"></p>
             </div>
 

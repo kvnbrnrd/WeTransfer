@@ -1,5 +1,7 @@
 <?php
 
+
+
 var_dump($_POST['fileName']);
 var_dump($_FILES);
 
@@ -23,6 +25,19 @@ if($moveIsOk){
 }
 else{
   $message = "Suite à une erreur, le fichier n'a pas été uploadé !!";
+}
+
+// ======================== AJOUT DANS BDD ==========================
+
+include('Models/resultatModel.php');
+
+if (!empty(($_POST["expediteur"]) && ($_POST["destinataire"]) && ($_POST['fileName']))) {
+
+  $ajoutExpediteur = $_POST["expediteur"];
+  $ajoutDestinataire = $_POST['destinataire'];
+  $ajoutNomFichier = $_POST["fileName"];
+
+  insertName($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier);
 }
 
 include('Views/resultatView.php');
