@@ -1,7 +1,7 @@
 <?php
 
-var_dump($_POST['fileName']);
-var_dump($_FILES);
+// var_dump($_POST['fileName']);
+// var_dump($_FILES);
 
 $cheminetnomTemporaire = $_FILES['fichier_upload']['tmp_name'];
 // ex : S:\WampServeur\tmp\php6DC3.tmp

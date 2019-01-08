@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/main.css" />
     <link rel="shortcut icon" href="Assets/Images/icone.ico" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="Assets/JS/main.js"></script>
+    
 </head>
 <body>
 
@@ -27,7 +27,7 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label>
                 <!-- <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label> -->
-                <input class="mdl-textfield__input" type="text" id="mailE" name="expediteur">
+                <input class="mdl-textfield__input" type="text" maxlength='30' id="mailE" name="expediteur">
                 <p class="errorMessage"></p>
             </div>
 
@@ -35,7 +35,7 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label>
                 <!-- <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label> -->
-                <input class="mdl-textfield__input" type="text" id="mailD" name="destinataire"/>
+                <input class="mdl-textfield__input" type="text" maxlength='30' id="mailD" name="destinataire"/>
                 <p class="errorMessage"></p>
             </div>
 
@@ -43,7 +43,7 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="up" id="fileName" class="mdl-textfield__label francais">Nom du fichier</label>
                 <!-- <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label> -->
-                <input class="mdl-textfield__input" type="text" name="fileName">
+                <input class="mdl-textfield__input" type="text" maxlength='20' name="fileName">
                 <p class="errorMessage"></p>
             </div>
 
@@ -68,35 +68,35 @@
     </div> <!-- Fin div container -->
 
     <script type="text/javascript">
+        // var Anglais = document.getElementsByClassName("anglais");
+        // var BtnAnglais = document.getElementById("btnanglais");
+    
+        // BtnAnglais.addEventListener("click",function() {
+        //     anglais();
+        // });
 
-    // var Anglais = document.getElementsByClassName("anglais");
-    // var BtnAnglais = document.getElementById("btnanglais");
-   
-    // BtnAnglais.addEventListener("click",function() {
-    //     anglais();
-    // });
+        // function anglais(){
+        //     console.log(Anglais);
+        //     for (i =0; i<10000; i++){
+        //         Francais.style.visibility['i']="hidden";
+        //      Francais.style.display['i']="none";
+        //     Anglais.style.visibility['i']="visible";
+        //     Anglais.style.display['i']="visible";
+            
+        //     }
+        // };
 
-    // function anglais(){
-    //     console.log(Anglais);
-    //     for (i =0; i<10000; i++){
-    //         Francais.style.visibility['i']="hidden";
-    //      Francais.style.display['i']="none";
-    //     Anglais.style.visibility['i']="visible";
-    //     Anglais.style.display['i']="visible";
+        // var Francais = document.getElementByClassName("francais");
+        // var BtnFrancais = document.getElementById("btnfrancais");
+        // BtnFrancais.addEventListener("click",function francais());
         
-    //     }
-    // };
-
-    // var Francais = document.getElementByClassName("francais");
-    // var BtnFrancais = document.getElementById("btnfrancais");
-    // BtnFrancais.addEventListener("click",function francais());
-    
-    // function francais(){
-    //     Francais.style.visibility="hidden";
-    //     Francais.style.display="none";
-    // }
-    
+        // function francais(){
+        //     Francais.style.visibility="hidden";
+        //     Francais.style.display="none";
+        // }
     </script>
+
+    <script src="../Assets/JS/main.js"></script>
 </body>
 
 </html>
