@@ -23,14 +23,14 @@
                 <!-- Email Expediteur -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label">Votre email</label>
-                <input class="mdl-textfield__input" type="text">
+                <input class="mdl-textfield__input" type="text" id="mailE">
                 <p class="errorMessage"></p>
             </div>
 
                 <!-- Email Destinataire -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label">Email destinataire</label>
-                <input class="mdl-textfield__input" type="text"/>
+                <input class="mdl-textfield__input" type="text" id="mailD"/>
                 <p class="errorMessage"></p>
             </div>
 
@@ -44,7 +44,7 @@
                 <!-- Le bouton permettant de linker le fichier -->
             <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
                 <i class="material-icons">attach_file</i>
-                <input type="file" name="fichier_upload">
+                <input type="file" name="fichier_upload[]" multiple="multiple">
             </div>
 
                 <!-- Le bouton envoyer -->
@@ -57,6 +57,7 @@
 
         </form>  
     </div> <!-- Fin div container -->
+
 
 </body>
 </html>
