@@ -1,5 +1,4 @@
 <?php
-
 include('Connexion.php');
 
 function insertName($ajoutDestinataire, $ajoutExpediteur,$cheminetNomDefinitif, $ajoutNomFichier) {
