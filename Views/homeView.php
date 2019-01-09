@@ -30,34 +30,27 @@
             <h4 class="francais">Transférez vos fichiers, simplement.</h4>
             <!-- <h4 class="anglais">Transfer your file, easily.</h4> -->
 
-            
-            
                 <!-- Email Expediteur -->
-            <div id="expediteurErreur" class="messageErreur"></div>    
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label> 
+                <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label>
                 <!-- <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='30' id="mailE" name="expediteur">
                 <p class="errorMessage"></p>
             </div>
 
-
-            
                 <!-- Email Destinataire -->
-            <div id="destinataireErreur" class="messageErreur"></div>   
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label> 
+                <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label>
                 <!-- <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='30' id="mailD" name="destinataire"/>
                 <p class="errorMessage"></p>
             </div>
 
-                    <!-- Le champ nom du fichier -->
-            <div id="nomFichierErreur" class="messageErreur"></div>
+                <!-- Le champ nom du fichier -->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="up" id="fileName" class="mdl-textfield__label francais">Nom du fichier</label>
                 <!-- <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label> -->
-                <input class="mdl-textfield__input" type="text" maxlength='20' id="nomFichier" name="fileName">
+                <input class="mdl-textfield__input" type="text" maxlength='20' name="fileName">
                 <p class="errorMessage"></p>
             </div>
 
@@ -71,7 +64,7 @@
                 <!-- Le bouton envoyer -->
             <div> 
                 <fieldset>
-                        <button name="submitBTN" type="submit" id="contact-submit" data-submit="...Sending" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
+                        <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
                     </button>
                     <!-- <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="anglais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transfer
                     </button> -->
@@ -110,7 +103,8 @@
         // }
     </script>
 
-    <script src="Assets/JS/main.js"></script>
+    <script src="../Assets/JS/main.js"></script>
+
 </body>
 
 </html>
