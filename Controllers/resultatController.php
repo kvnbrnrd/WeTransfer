@@ -19,10 +19,10 @@ $moveIsOk = move_uploaded_file($cheminetnomTemporaire, $cheminetNomDefinitif);
 // fonction PHP déplacer fichier = move_uploaded_file(cheminEtNomTemporaire, cheminEtNomDeDestination)
 
 if($moveIsOk){
-  $message = "le fichier à été uploadé dans ".$cheminetNomDefinitif;
+  $message = "Le fichier est disponible pour téléchargement à l'adresse suivante : ";//.$cheminetNomDefinitif
 }
 else{
-  $message = "Suite à une erreur, le fichier n'a pas été uploadé !!";
+  $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";
 }
 
 // ======================== AJOUT DANS BDD ==========================

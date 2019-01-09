@@ -14,11 +14,25 @@
     
 </head>
 <body>
-        <h1>Etat du telechargement</h1>
-        
-        <p><?= $message?></p>
 
-        <script src="Assets/JS/main.js"></script>
+    <div class="container">
+        <div id="contact" >
+            <h3><img class="logo" id="logo" src="Assets/images/logo.png"></h3>
+            <h1>État du téléchargement</h1>
+            <p><?= $message?></p>
+
+                <!-- Le bouton envoyer -->
+            <div> 
+                <fieldset>
+                        <button name="retour" src="http://localhost/projets/Jan2019/WeTransfer/" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
+                    </button>
+                    <!-- <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="anglais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transfer
+                    </button> -->
+                </fieldset>
+            </div>
+
+        </div>  
+    </div>
         
 </body>
 </html>
