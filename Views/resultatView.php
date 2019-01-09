@@ -15,6 +15,12 @@
 </head>
 <body>
 
+    <header>
+        <nav class="navbar navbar-expand justify-content-md-center">
+        <img class="logoH" id="logoH" src="Assets/images/logo.png">
+        </nav>
+    </header>
+    
     <div class="container">
         <div id="contact" >
             <h3><img class="logo" id="logo" src="Assets/images/logo.png"></h3>

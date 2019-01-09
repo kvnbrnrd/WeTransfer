@@ -19,7 +19,7 @@ $moveIsOk = move_uploaded_file($cheminetnomTemporaire, $cheminetNomDefinitif);
 // fonction PHP déplacer fichier = move_uploaded_file(cheminEtNomTemporaire, cheminEtNomDeDestination)
 
 if($moveIsOk){
-  $message = "Le fichier est disponible pour téléchargement à l'adresse suivante : ";//.$cheminetNomDefinitif
+  $message = "Le fichier est disponible pour téléchargement<br> à l'adresse suivante : ";//.$cheminetNomDefinitif
 }
 else{
   $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";
