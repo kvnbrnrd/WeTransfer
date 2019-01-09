@@ -31,7 +31,8 @@
             <!-- <h4 class="anglais">Transfer your file, easily.</h4> -->
 
                 <!-- Email Expediteur -->
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <div id="expediteurErreur" class="messageErreur"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label>
                 <!-- <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='30' id="mailE" name="expediteur">
@@ -39,7 +40,8 @@
             </div>
 
                 <!-- Email Destinataire -->
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <div id="destinataireErreur" class="messageErreur"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label>
                 <!-- <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='30' id="mailD" name="destinataire"/>
@@ -47,10 +49,11 @@
             </div>
 
                 <!-- Le champ nom du fichier -->
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <div id="nomFichierErreur" class="messageErreur"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="up" id="fileName" class="mdl-textfield__label francais">Nom du fichier</label>
                 <!-- <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label> -->
-                <input class="mdl-textfield__input" type="text" maxlength='20' name="fileName">
+                <input class="mdl-textfield__input" type="text" maxlength='20' name="fileName" id="nomFichier">
                 <p class="errorMessage"></p>
             </div>
 
@@ -103,7 +106,7 @@
         // }
     </script>
 
-    <script src="../Assets/JS/main.js"></script>
+    <script src="Assets/JS/main.js"></script>
 
 </body>
 
