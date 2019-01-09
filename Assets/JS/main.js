@@ -1,22 +1,39 @@
 
+var formulaire = document.querySelector("#contact");
+
+formulaire.addEventListener("submit", function(evenement) {
+    verif_formulaire(formulaire, evenement);
+});
+
+function verif_formulaire(formulaire, evenement) {
+
+    var expediteur = formulaire.querySelector("#mailE"),
+        destinataire = formulaire.querySelector("#mailD"),
+        nomFichier = formulaire.querySelector("#nomFichier"),
+        messageExpediteur = formulaire.querySelector("#expediteurErreur"),
+        messageDestinataire = formulaire.querySelector("#destinataireErreur"),
+        messagenomFichier = formulaire.querySelector("#nomFichierErreur");
 
 
-// document.getElementById("uploadBtn").onchange = function () {
-//     document.getElementById("uploadFile").value = this.files[0].name;
-// };
+    if((expediteur.value.length < 6) && (expediteur.value.indexOf('@') == -1))  {
 
-// function verifMail(champ) { //on prépare une fonction de vérification du mail
-//     var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
-//     if (!regex.test(champ.value)) {
-//         return false;
-//     }
+        messageExpediteur.innerHTML = "Votre adresse mail est non conforme!";
+        evenement.preventDefault();
+        
+    }
+    if ((destinataire.value.length < 6) && (destinataire.value.indexOf('@') == -1)) {
 
-//     else {
-//         return true;
-//     }
-// }
+        messageDestinataire.innerHTML = "L'adresse mail du destinataire est non conforme!";
+        evenement.preventDefault();
 
-// var form = document.getElementById("contact"); //on récupère la totalité du formulaire dans une variable
+    }
+    if (nomFichier.value.length < 2) {
+
+        messagenomFichier.innerHTML = "Le nom du fichier est trop court!";
+        evenement.preventDefault();
+
+    }
+}
 
 // form.addEventListener("submit", function (monEvenement) { //On ajoute un écouteur d'évènement sur le formulaire : Quand le formulaire est envoyé, on exécute le code contenu dans les accolades de "function() {}""
 
