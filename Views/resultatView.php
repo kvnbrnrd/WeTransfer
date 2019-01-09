@@ -10,9 +10,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/main.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="Assets/JS/main.js"></script>
-    
 </head>
+
 <body>
 
     <header>
