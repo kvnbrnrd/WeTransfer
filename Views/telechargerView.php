@@ -16,14 +16,21 @@
 
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-        <img class="logoH" id="logoH" src="Assets/images/logo.png">
+        <img class="logoH" id="logoH" src="Assets/Images/logo.png">
         </nav>
     </header>
-
-    <form action="<?= $message?>">
-    <a href="<?= $message?>">ICI</a>
-    <input type="submit" value="Valider">
-    </form>
-    <h1><?= $message?></h1>
-</body>
+    
+<div class="container">
+    <div id="contact" >
+        <h3><img class="logo" id="logo" src="Assets/Images/logo.png"></h3>
+        <a href="<?= $message?>">ICI</a>
+    <div>
+        <form action="home">
+            <fieldset>
+                <button name="retour" src="" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
+                </button>
+            </fieldset>
+        </form>
+</div>
 </html>
+</body>
