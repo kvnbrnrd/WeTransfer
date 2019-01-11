@@ -11,9 +11,6 @@ $extension=substr (strrchr ($_FILES['fichier_upload']['name'],"."), 1);
 $nouveauNom = $_POST['fileName'].'.'.$extension;
 // ex : nomImage.png
 
-$cheminetNomDefinitif = 'Assets/Stockage/'.$nouveauNom;
-// ex : Assets/Stockage/nomImage.gif
-
 $moveIsOk = move_uploaded_file($cheminetnomTemporaire, $nouveauNom);
 // fonction PHP déplacer fichier = move_uploaded_file(cheminEtNomTemporaire, cheminEtNomDeDestination)
 
@@ -23,7 +20,7 @@ $moveIsOk = move_uploaded_file($cheminetnomTemporaire, $nouveauNom);
 // Instancie l'objet ZipArchive
 $zip = new ZipArchive;
 // Crée l'archive au moyen de méthode de l'objet ZipArchive
-if ($zip->open('Assets/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CREATE) === TRUE)
+if ($zip->open('telecharger/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CREATE) === TRUE)
 {
     // Ajoute un fichier a l'archive $zip
     $zip->addFile($nouveauNom);
@@ -33,8 +30,14 @@ if ($zip->open('Assets/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CREATE)
     unlink($nouveauNom);
 }
 
+$cheminetNomDefinitif = "Stockage/".$_POST['fileName'].".zip";
+
+$cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip";;
+
+// ========================================= LIEN RESULTAT ===================================================
+
 if($moveIsOk){
-  $message = "Le fichier est disponible pour téléchargement<br> à l'adresse suivante : ";//.$cheminetNomDefinitif
+  $message = "Le fichier est disponible pour téléchargement<br> : <a href=".$cheminSpecialPourToiMonChou.">ICI</a>";
 }
 else{
   $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";

@@ -20,6 +20,10 @@
         </nav>
     </header>
 
-    <a href="Assets/Stockage/ttttt.txt">click ici</a>
+    <form action="<?= $message?>">
+    <a href="<?= $message?>">ICI</a>
+    <input type="submit" value="Valider">
+    </form>
+    <h1><?= $message?></h1>
 </body>
 </html>

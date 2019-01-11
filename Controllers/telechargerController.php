@@ -1,23 +1,21 @@
 <?php
 
 include('Models/telechargerModel.php');
+// ========================================= RECUPERE DEPUIS LA BDD ===================================================
 
-if (isset($_GET['id'])){
+if (isset($_GET['id'])) {
 
-    $idBDD=$_GET['id'];
+    $idBDD = $_GET['id'];
+
+    $cheminBDD = recupereFichier($idBDD);
+
+    $message = $cheminBDD;
+    //$message = "Le fichier est disponible pour téléchargement<br> : <a href=".$cheminBDD.">ICI</a>";
+    echo "chemin BDD : " . $cheminBDD . "<br>";
     
-    
-    if (file_exists($telecharge)) {
-        header('Content-Description: File Transfer');
-        header('Content-Type: application/octet-stream');
-        header('Content-Disposition: attachment; filename="'.basename($telecharge).'"');
-        header('Expires: 0');
-        header('Cache-Control: must-revalidate');
-        header('Pragma: public');
-        header('Content-Length: ' . filesize($telecharge));
-        readfile($telecharge);
-        exit;
-    }
-    }
+}
+else{
+    $message = "Suite à une erreur, le fichier n'a pas pu être telecharger.";
+}
 
 include('Views/telechargerView.php');
