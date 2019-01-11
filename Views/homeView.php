@@ -16,7 +16,7 @@
 
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-        <img class="logoH" id="logoH" src="Assets/images/logo.png">
+        <img class="logoH" id="logoH" src="Assets/Images/logo.png">
         </nav>
     </header>
 
@@ -25,7 +25,7 @@
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
             <h3>
-                <img class="logo" id="logo" src="Assets/images/logo.png">
+                <img class="logo" id="logo" src="Assets/Images/logo.png">
             </h3>
             <h4 class="francais">Transférez vos fichiers, simplement.</h4>
             <!-- <h4 class="anglais">Transfer your file, easily.</h4> -->
