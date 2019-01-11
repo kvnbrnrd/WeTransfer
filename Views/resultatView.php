@@ -27,11 +27,13 @@
             <p><?= $message?></p>
 
                 <!-- Le bouton envoyer -->
-            <div> 
-                <fieldset>
-                        <button name="retour" src="http://localhost/projets/Jan2019/WeTransfer/" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
-                    </button>
-                </fieldset>
+            <div>
+                <form action="home">
+                    <fieldset>
+                        <button name="retour" src="" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
+                        </button>
+                    </fieldset>
+                </form>
             </div>
 
         </div>  
