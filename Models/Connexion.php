@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost';
-	$db = 'wetransfer';
-	$user ='root';
-	$pass = '';
+$host = 'promo-24.codeur.online';
+	$db = 'kevinb269_wetransfer';
+	$user ='kevinb269';
+	$pass = 'pSD70LNA1TXW3w==';
 	$charset = 'utf8mb4';
 
 $bdd = "mysql:host=$host;dbname=$db;charset=$charset";
