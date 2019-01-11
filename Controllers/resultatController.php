@@ -1,7 +1,6 @@
 <?php
 
-// var_dump($_POST['fileName']);
-// var_dump($_FILES);
+// ========================================= ENREGISTRE Le FICHIER ===================================================
 
 $cheminetnomTemporaire = $_FILES['fichier_upload']['tmp_name'];
 // ex : S:\WampServeur\tmp\php6DC3.tmp
@@ -17,7 +16,9 @@ $cheminetNomDefinitif = 'Assets/Stockage/'.$nouveauNom;
 
 $moveIsOk = move_uploaded_file($cheminetnomTemporaire, $nouveauNom);
 // fonction PHP déplacer fichier = move_uploaded_file(cheminEtNomTemporaire, cheminEtNomDeDestination)
-echo $cheminetNomDefinitif;
+
+
+// ========================================= TRANSFORME EN ZIP ===================================================
 
 // Instancie l'objet ZipArchive
 $zip = new ZipArchive;
@@ -32,12 +33,6 @@ if ($zip->open('Assets/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CREATE)
     unlink($nouveauNom);
 }
 
-//Crée une instance de ZipArchive
-// $zip = new ZipArchive();
-// $zip->open($_POST['fileName'].'.zip');
-// $zip->addFile($cheminetNomDefinitif);
-
-
 if($moveIsOk){
   $message = "Le fichier est disponible pour téléchargement<br> à l'adresse suivante : ";//.$cheminetNomDefinitif
 }
@@ -45,7 +40,7 @@ else{
   $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";
 }
 
-// ======================== AJOUT DANS BDD ==========================
+// ========================================= AJOUT DANS BDD ===================================================
 
 include('Models/resultatModel.php');
 
