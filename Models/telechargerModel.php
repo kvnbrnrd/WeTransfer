@@ -12,7 +12,9 @@ function recupereFichier($idBDD) {
     
     return $cheminBDD['url_fichier'];
 }
+
 $cheminBDD = recupereFichier($idBDD);
+
 echo $cheminBDD;
 
 recupereFichier($idBDD);

@@ -20,6 +20,6 @@
         </nav>
     </header>
 
-    <a href="..\WeTransfer\Assets\Stockage\aaaaaaaaaaaa.gif">click ici</a>
+    <a href="Assets/Stockage/ttttt.txt">click ici</a>
 </body>
 </html>
