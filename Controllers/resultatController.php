@@ -33,7 +33,16 @@ if ($zip->open('telecharger/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CR
 
 $cheminetNomDefinitif = "Stockage/".$_POST['fileName'].".zip";
 
-$cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip";;
+$cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip";
+
+// ========================================= LIEN RESULTAT ===================================================
+
+if($moveIsOk){
+  $message = "Le fichier est disponible pour téléchargement<br> : <a href=".$cheminSpecialPourToiMonChou.">ICI</a>";
+}
+else{
+  $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";
+}
 
 // ========================================= AJOUT DANS BDD ===================================================
 
@@ -45,20 +54,11 @@ if (!empty(($_POST["expediteur"]) && ($_POST["destinataire"]) && ($_POST['fileNa
 
   // Retourne un identifiant unique basé sur l'horodatage, sous la forme d'une chaîne de 13 caractères
   $idBDD = uniqid();
-  echo "idBDD controller = " . $idBDD . "<br>";
+
   insertName($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier, $idBDD);
-  // recupereFichier($idBDD);
+  
+  $cheminBDD = recupereFichier($idBDD);
 }
-
-// ========================================= LIEN RESULTAT ===================================================
-
-if($moveIsOk){
-  $message = "Le fichier est disponible pour téléchargement<br> : <a href=".$cheminSpecialPourToiMonChou.">ICI</a>";
-}
-else{
-  $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";
-}
-
 
 include('Views/resultatView.php');
 

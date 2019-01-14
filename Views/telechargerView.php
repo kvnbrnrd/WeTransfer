@@ -23,8 +23,11 @@
 <div class="container">
     <div id="contact" >
         <h3><img class="logo" id="logo" src="../Assets/Images/logo.png"></h3>
-        <a href="<?= $message?>">ICI</a>
+        <fieldset>
+        <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href=<?= $cheminBDD ?> >TELECHARGER</a>
+        </fieldset>
     <div>
+        
         <fieldset>
         <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.php">RETOUR A L'ACCUEIL</a>
         </fieldset>

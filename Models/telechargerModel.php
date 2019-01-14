@@ -1,17 +1,18 @@
 <?php
 include('Connexion.php');
 
-$idBDD = 6;
-
 function recupereFichier($idBDD) {
     global $bdd;
 
-    $requete = "SELECT `url_fichier`FROM `data` WHERE `id`= $idBDD";
+    $requete = $bdd->prepare("SELECT url_fichier FROM data where id = ?");
 
-    $reponse = $bdd->query($requete);
+    if ($requete->execute(array($idBDD))) {
+        while ($donnee = $requete->fetch()) {
 
-    $cheminBDD = $reponse->fetch();
-    
-    return $cheminBDD['url_fichier'];
+            $cheminBDD = $donnee['url_fichier'];
+        
+        }
+    }
+    return $cheminBDD;
 }
 
