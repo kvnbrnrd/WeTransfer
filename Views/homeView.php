@@ -50,7 +50,7 @@
                 <!-- Le champ nom du fichier -->
                 <div id="nomFichierErreur" class="messageErreur"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <label for="up" id="fileName" class="mdl-textfield__label francais">Nom du fichier</label>
+                <label for="up" id="fileName" class="mdl-textfield__label francais">Nommez votre fichier</label>
                 <!-- <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='20' name="fileName" id="nomFichier">
                 <p class="errorMessage"></p>

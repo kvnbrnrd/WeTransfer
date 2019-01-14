@@ -5,7 +5,7 @@ function insertName($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif,
     global $bdd;
 
     $insert = $bdd->prepare ("INSERT INTO data(destinataire, expediteur, url_fichier, nom_fichier, id, `date`) VALUES (?,?,?,?,?,NOW())");
-    $insert -> execute(array($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier, $idBDD));
+    // $insert -> execute(array($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier, $idBDD));
     $insert ->fetchAll();
 }
 

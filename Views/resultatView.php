@@ -22,9 +22,9 @@
     <div class="container">
         <div id="contact" >
         <h3><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
-            <h1>État du téléchargement</h1>
+            <h1>Transfert effectué !</h1>
             <p><?= $message?></p>
-            <form action="home">
+            <form action="home"> 
             <fieldset>
                 <button name="retour" src="" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
                 </button>

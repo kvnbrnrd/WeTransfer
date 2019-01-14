@@ -22,19 +22,14 @@
     
 <div class="container">
     <div id="contact" >
-        <h3><img class="logo" id="logo" src="../Assets/Images/logo.png"></h3>
+    <h3><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="../Assets/Images/logo.png"></a></h3>
         <!-- ===========================  A MODIFIER ==================== #} -->
         <fieldset>
         <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href=<?= $cheminBDD ?> >TELECHARGER</a>
+        <a class="francais mdl-button mdl-js-button mdl-js-ripple-effect" href="../index.php">RETOUR A L'ACCUEIL</a>
         </fieldset>
-        <h3> 
-        <a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="../Assets/Images/logo.png"></a></h3>
-        <a href="<?= $message?>">ICI</a>
     <div>
         
-        <fieldset>
-        <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.php">RETOUR A L'ACCUEIL</a>
-        </fieldset>
     </div>
 </html>
 </body>
