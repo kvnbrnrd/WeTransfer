@@ -76,36 +76,7 @@
         </form>  
     </div> <!-- Fin div container -->
 
-    <script type="text/javascript">
-        // var Anglais = document.getElementsByClassName("anglais");
-        // var BtnAnglais = document.getElementById("btnanglais");
-    
-        // BtnAnglais.addEventListener("click",function() {
-        //     anglais();
-        // });
-
-        // function anglais(){
-        //     console.log(Anglais);
-        //     for (i =0; i<10000; i++){
-        //         Francais.style.visibility['i']="hidden";
-        //      Francais.style.display['i']="none";
-        //     Anglais.style.visibility['i']="visible";
-        //     Anglais.style.display['i']="visible";
-            
-        //     }
-        // };
-
-        // var Francais = document.getElementByClassName("francais");
-        // var BtnFrancais = document.getElementById("btnfrancais");
-        // BtnFrancais.addEventListener("click",function francais());
-        
-        // function francais(){
-        //     Francais.style.visibility="hidden";
-        //     Francais.style.display="none";
-        // }
-    </script>
-
-    <!-- <script src="Assets/JS/main.js"></script> -->
+    <script src="Assets/JS/main.js"></script>
 
 </body>
 

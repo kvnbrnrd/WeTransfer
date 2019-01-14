@@ -1,5 +1,5 @@
 <?php
-include('Models/resultatModel.php');
+include('Models/resultatModel.php');//J'include un nath
 
 // ========================================= ENREGISTRE LE FICHIER ===================================================
 
@@ -26,14 +26,14 @@ if ($zip->open('telecharger/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CR
     // Ajoute un fichier a l'archive $zip
     $zip->addFile($nouveauNom);
     // Ferme l'archive
-    $zip->close();
+    $zip->close();//Je zip un nath
     // Supprime le fichier a la racine
     unlink($nouveauNom);
 }
 
 $cheminetNomDefinitif = "Stockage/".$_POST['fileName'].".zip";
 
-$cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip";
+$cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip";//Mon petit chou de nath <3 
 
 // ========================================= LIEN RESULTAT ===================================================
 
