@@ -2,8 +2,8 @@
 
 $host = 'localhost';
 	$db = 'wetransfer';
-	$user ='root';
-	$pass = '';
+	$user ='phpmyadmin';
+	$pass = 'fnathanf';
 	$charset = 'utf8mb4';
 
 $bdd = "mysql:host=$host;dbname=$db;charset=$charset";

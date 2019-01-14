@@ -1,15 +1,15 @@
 <?php
 include('Connexion.php');
 
-function insertName($ajoutDestinataire, $ajoutExpediteur,$cheminetNomDefinitif, $ajoutNomFichier) {
+function insertName($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier, $idBDD) {
     global $bdd;
 
-    $insert = $bdd->prepare ("INSERT INTO data(destinataire, expediteur, url_fichier, nom_fichier, `date`) VALUES (?,?,?,?,NOW())");
-    $insert -> execute(array($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier));
+    $insert = $bdd->prepare ("INSERT INTO data(destinataire, expediteur, url_fichier, nom_fichier, id, `date`) VALUES (?,?,?,?,?,NOW())");
+    $insert -> execute(array($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier, $idBDD));
     $insert ->fetchAll();
+    echo "idBDD model insert name = " . $idBDD . "<br>";
 }
-
-$idBDD = 6;
+echo "idBDD model = " . $idBDD . "<br>";
 
 function recupereFichier($idBDD) {
     global $bdd;
@@ -23,8 +23,7 @@ function recupereFichier($idBDD) {
     return $cheminBDD['url_fichier'];
 }
 
-$cheminBDD = recupereFichier($idBDD);
+//$cheminBDD = recupereFichier($idBDD);
 
-echo '<br>'.$cheminBDD;
+// echo '<br>'.$cheminBDD;
 
-recupereFichier($idBDD);
