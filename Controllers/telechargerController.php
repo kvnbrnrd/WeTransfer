@@ -1,18 +1,17 @@
 <?php
-
 include('Models/telechargerModel.php');
-// ========================================= RECUPERE DEPUIS LA BDD ===================================================
 
-if (isset($_GET['id'])) {
+// ========================================= RECUPERE DEPUIS LA BDD ============================================
 
-    $idBDD = $_GET['id'];
+if (isset($idBDD)) {
 
     $cheminBDD = recupereFichier($idBDD);
 
-    
 }
 else{
+
     $message = "Suite à une erreur, le fichier n'a pas pu être telecharger.";
+
 }
 
 include('Views/telechargerView.php');

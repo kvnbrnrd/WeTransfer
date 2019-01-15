@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="shortcut icon" href="Assets/Images/icone.ico" />
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/main.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -15,23 +16,24 @@
 <body>
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-        <a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
+        <a href="https://nathanf.promo-24.codeur.online/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
         </nav>
     </header>
     
     <div class="container">
         <div id="contact" >
-        <h3><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
-            <h1>Transfert effectué !</h1>
+            <h3><a href="https://nathanf.promo-24.codeur.online/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
+
+            <h1>Etat du transfert !</h1>
+
             <p><?= $message?></p>
             <form action="home"> 
-            <fieldset>
-                <button name="retour" src="" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
-                </button>
-            </fieldset>
-        </form>
-        </div>  
-
-    </div>
-</html>
+                <fieldset>
+                    <button name="retour" src="" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Retour à l'accueil
+                    </button>
+                </fieldset>
+            </form>
+        </div> <!-- Fin Div contact -->
+    </div> <!-- Fin Div container -->
 </body>
+</html>

@@ -7,12 +7,14 @@ function recupereFichier($idBDD) {
     $requete = $bdd->prepare("SELECT url_fichier FROM data where id = ?");
 
     if ($requete->execute(array($idBDD))) {
+    
         while ($donnee = $requete->fetch()) {
-
+        
             $cheminBDD = $donnee['url_fichier'];
         
         }
     }
+
     return $cheminBDD;
 }
 

@@ -10,28 +10,25 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/main.css" />
     <link rel="shortcut icon" href="Assets/Images/icone.ico" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    
 </head>
-<body>
 
+<body>
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-        <a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
+        <a href="https://nathanf.promo-24.codeur.online/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
         </nav>
     </header>
-
 
 
     <div class="container">
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
-            <h3><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
+            <h3><a href="https://nathanf.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
             <h4 class="francais">Transférez vos fichiers, simplement.</h4>
-            <!-- <h4 class="anglais">Transfer your file, easily.</h4> -->
 
                 <!-- Email Expediteur -->
-                <div id="expediteurErreur" class="messageErreur"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <div id="expediteurErreur" class="messageErreur"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="email" id="email" class="mdl-textfield__label francais">Votre email</label>
                 <!-- <label for="email" id="email" class="mdl-textfield__label anglais">Your Email</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='30' id="mailE" name="expediteur">
@@ -39,8 +36,8 @@
             </div>
 
                 <!-- Email Destinataire -->
-                <div id="destinataireErreur" class="messageErreur"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <div id="destinataireErreur" class="messageErreur"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="destinataire" id="destinataire" class="mdl-textfield__label francais">Email du destinataire</label>
                 <!-- <label for="destinataire" id="destinataire" class="mdl-textfield__label anglais">Recipient Email</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='30' id="mailD" name="destinataire"/>
@@ -48,8 +45,8 @@
             </div>
 
                 <!-- Le champ nom du fichier -->
-                <div id="nomFichierErreur" class="messageErreur"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <div id="nomFichierErreur" class="messageErreur"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="up" id="fileName" class="mdl-textfield__label francais">Nommez votre fichier</label>
                 <!-- <label for="up" id="fileName" class="mdl-textfield__label anglais">Name of the file</label> -->
                 <input class="mdl-textfield__input" type="text" maxlength='20' name="fileName" id="nomFichier">
@@ -68,16 +65,12 @@
                 <fieldset>
                         <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
                     </button>
-                    <!-- <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="anglais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transfer
-                    </button> -->
                 </fieldset>
             </div>
-
-        </form>  
+        </form>
     </div> <!-- Fin div container -->
 
+
     <script src="Assets/JS/main.js"></script>
-
 </body>
-
 </html>
