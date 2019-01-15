@@ -16,13 +16,13 @@
 <body>
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-            <a href="https://nathanf.promo-24.codeur.online/WeTransfer/index.php"><img class="logoH" id="logoH" src="../Assets/Images/logo.png"></a>
+            <a href="https://web-developpement.eu/MesProjets/WeTransfer/index.php"><img class="logoH" id="logoH" src="../Assets/Images/logo.png"></a>
         </nav>
     </header>
 
     <div class="container">
         <div id="contact" >
-        <h3><a href="https://nathanf.promo-24.codeur.online/WeTransfer/index.php"><img class="logo" id="logo" src="../Assets/Images/logo.png"></a></h3>
+        <h3><a href="https://web-developpement.eu/MesProjets/WeTransfer/index.php"><img class="logo" id="logo" src="../Assets/Images/logo.png"></a></h3>
             <fieldset>
                 <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href=<?= $cheminBDD ?> >TELECHARGER</a>
                 <a class="francais mdl-button mdl-js-button mdl-js-ripple-effect" href="../index.php">RETOUR A L'ACCUEIL</a>

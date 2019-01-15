@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-        <a href="https://nathanf.promo-24.codeur.online/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
+        <a href="https://web-developpement.eu/MesProjets/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
         </nav>
     </header>
 
@@ -23,7 +23,7 @@
     <div class="container">
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
-            <h3><a href="https://nathanf.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
+            <h3><a href="https://web-developpement.eu/MesProjets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
             <h4 class="francais">Transférez vos fichiers, simplement.</h4>
 
                 <!-- Email Expediteur -->
