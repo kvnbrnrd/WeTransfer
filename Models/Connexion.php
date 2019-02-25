@@ -1,8 +1,8 @@
 <?php
 
 $host = '';
-	$db = '';
-	$user ='';
+	$db = 'wetransfer';
+	$user ='root';
 	$pass = '';
 	$charset = 'utf8mb4';
 

@@ -21,19 +21,17 @@ $moveIsOk = move_uploaded_file($cheminetnomTemporaire, $nouveauNom);
 // Instancie l'objet ZipArchive
 $zip = new ZipArchive;
 // Crée l'archive au moyen de méthode de l'objet ZipArchive
-if ($zip->open('telecharger/Stockage/'.htmlspecialchars($_POST['fileName']).'.zip', ZipArchive::CREATE) === TRUE)
+if ($zip->open('telecharger/Stockage/'.$_POST['fileName'].'.zip', ZipArchive::CREATE) === TRUE)
 {
     // Ajoute un fichier a l'archive $zip
     $zip->addFile($nouveauNom);
     // Ferme l'archive
-    $zip->close();//Je zip
+    $zip->close();
     // Supprime le fichier a la racine
     unlink($nouveauNom);
 }
-
-$cheminetNomDefinitif = "Stockage/".htmlspecialchars($_POST['fileName']).".zip";
-
-$cheminSpecialPourToiMonChou = "telecharger/Stockage/".htmlspecialchars($_POST['fileName']).".zip";
+$cheminetNomDefinitif = "Stockage/".$_POST['fileName'].".zip";
+$cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip";
 
 // ========================================= LIEN RESULTAT ===================================================
 
@@ -46,7 +44,7 @@ else{
 
 // ========================================= AJOUT DANS BDD ===================================================
 
-if (!empty((htmlspecialchars($_POST["expediteur"]) && htmlspecialchars(($_POST["destinataire"])) && htmlspecialchars(($_POST['fileName']))) {
+if (!empty(htmlspecialchars(($_POST["expediteur"])) && htmlspecialchars(($_POST["destinataire"])) && htmlspecialchars(($_POST['fileName'])))) {
 
   $ajoutExpediteur = htmlspecialchars($_POST["expediteur"]);
   $ajoutDestinataire = htmlspecialchars($_POST['destinataire']);
@@ -123,7 +121,7 @@ $sujet = "Transfert de fichiers";
 
 //=====Création du header de l'e-mail.
 $header = "From: ".htmlspecialchars($_POST['expediteur']).$passage_ligne;
-$header.= "Reply-to: "htmlspecialchars(.$_POST['expediteur']).$passage_ligne;
+$header.= "Reply-to: ".htmlspecialchars($_POST['expediteur']).$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 

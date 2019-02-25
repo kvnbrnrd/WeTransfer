@@ -3,6 +3,7 @@
 
 RewriteEngine on
 
+
 RewriteCond  %{REQUEST_FILENAME} !-f
 RewriteCond  %{REQUEST_FILENAME} !-d
 # Si tu vois home dans URL tu comprends index.php?page=home
