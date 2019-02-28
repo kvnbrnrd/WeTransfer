@@ -21,13 +21,14 @@
     </header>
 
     <div class="container">
-        <div id="contact" >
-        <h3><a href="https://web-developpement.eu/MesProjets/WeTransfer/index.php"><img class="logo" id="logo" src="../Assets/Images/logo.png"></a></h3>
+        <div id="contact">
+        <h3>Burger time !</h3>
             <fieldset>
                 <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href=<?= $cheminBDD ?> >TELECHARGER</a>
                 <a class="francais mdl-button mdl-js-button mdl-js-ripple-effect" href="../index.php">RETOUR A L'ACCUEIL</a>
             </fieldset>
         <div>
     </div>
+
 </body>
 </html>

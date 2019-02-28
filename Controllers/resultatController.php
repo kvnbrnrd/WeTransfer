@@ -36,10 +36,11 @@ $cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip"
 // ========================================= LIEN RESULTAT ===================================================
 
 if($moveIsOk){
-  $message = "Le fichier est disponible pour téléchargement<br> : <a href=".$cheminSpecialPourToiMonChou.">ICI</a>";
+  $message = "Le fichier a bien été transféré.</p>
+  And that's the wayyyyyy the news goes!";
 }
 else{
-  $message = "Suite à une erreur, le fichier n'a pas pu être transféré.";
+  $message = "Uh ohhhh ! Le fichier n'a pas pu être transféré.";
 }
 
 // ========================================= AJOUT DANS BDD ===================================================
