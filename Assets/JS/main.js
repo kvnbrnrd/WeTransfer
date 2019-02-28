@@ -32,3 +32,11 @@ function verif_formulaire(formulaire, evenement) {
     
     }
 }
+
+// function copyToClipboard(element) {
+//     var $temp = $("<span>");
+//     $("body").append($temp);
+//     $temp.val($(element).text()).select();
+//     document.execCommand("copy");
+//     $temp.remove();
+//   }

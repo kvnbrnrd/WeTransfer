@@ -36,7 +36,7 @@ $cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip"
 // ========================================= LIEN RESULTAT ===================================================
 
 if($moveIsOk){
-  $message = "Le fichier a bien été transféré.</p><a href=".$cheminSpecialPourToiMonChou.">ICI</a></p>And that's the wayyyyyy the news goes!";
+  $message = "Le fichier a bien été transféré.</p><a href=".$cheminSpecialPourToiMonChou.">https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/$cheminSpecialPourToiMonChou</a></p>And that's the wayyyyyy the news goes!";
 }
 else{
   $message = "Uh ohhhh ! Le fichier n'a pas pu être transféré.";
