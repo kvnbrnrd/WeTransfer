@@ -24,6 +24,7 @@
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
             <h3><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
+            <img id="snuffles" src="Assets/Images/snuffles.png" alt="">
             <h4 class="francais">Transférez vos fichiers vers un autre univers !</h4>
 
             <!-- Email Expediteur -->

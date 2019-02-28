@@ -134,6 +134,11 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
   padding-left: 100px;
 }
 
+#snuffles
+{
+  display: none;
+}
+
 .errorMsg {
     color:red;
 }
@@ -225,9 +230,15 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
     font-size: 18px;
   }
 
+  #snuffles
+{
+  display: initial;
+  padding-left: 50px;
+}
+
 
 }
-@media screen and (min-height: 1200px) {
+@media screen and (min-height: 768px) and (max-width: 1280px) {
   body {
     background: url('../Images/rick2.png') !important;
     background-repeat: no-repeat !important;
