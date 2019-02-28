@@ -16,15 +16,17 @@
 <body>
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
-            <a href="https://web-developpement.eu/MesProjets/WeTransfer/index.php"><img class="logoH" id="logoH" src="../Assets/Images/logo.png"></a>
+            <a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/"><img class="logoH" id="logoH" src="../Assets/Images/logo.png"></a>
         </nav>
     </header>
 
     <div class="container">
         <div id="contact">
+        <img class="success" src="../Assets/Images/success.png"></a>
         <h3>Burger time !</h3>
+        <p>Téléchargez votre fichier en cliquant sur le bouton ci-dessous, ou faites un transfert à votre tour !</p>
             <fieldset>
-                <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href=<?= $cheminBDD ?> >TELECHARGER</a>
+                <a class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href=<?=$cheminBDD ?> >TELECHARGER</a>
                 <a class="francais mdl-button mdl-js-button mdl-js-ripple-effect" href="../index.php">RETOUR A L'ACCUEIL</a>
             </fieldset>
         <div>

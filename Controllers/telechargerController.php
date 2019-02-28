@@ -2,9 +2,8 @@
 include('Models/telechargerModel.php');
 
 // ========================================= RECUPERE DEPUIS LA BDD ============================================
-
-if (isset($idBDD)) {
-
+if (isset($_GET['id'])) {
+    $idBDD = $_GET['id'];
     $cheminBDD = recupereFichier($idBDD);
 
 }

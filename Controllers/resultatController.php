@@ -36,8 +36,7 @@ $cheminSpecialPourToiMonChou = "telecharger/Stockage/".$_POST['fileName'].".zip"
 // ========================================= LIEN RESULTAT ===================================================
 
 if($moveIsOk){
-  $message = "Le fichier a bien été transféré.</p>
-  And that's the wayyyyyy the news goes!";
+  $message = "Le fichier a bien été transféré.</p><a href=".$cheminSpecialPourToiMonChou.">ICI</a></p>And that's the wayyyyyy the news goes!";
 }
 else{
   $message = "Uh ohhhh ! Le fichier n'a pas pu être transféré.";
@@ -45,17 +44,17 @@ else{
 
 // ========================================= AJOUT DANS BDD ===================================================
 
-if (!empty(htmlspecialchars(($_POST["expediteur"])) && htmlspecialchars(($_POST["destinataire"])) && htmlspecialchars(($_POST['fileName'])))) {
+if (!empty(($_POST["expediteur"]) && ($_POST["destinataire"]) && ($_POST['fileName']))) {
+  $ajoutExpediteur = $_POST["expediteur"];
+  $ajoutDestinataire = $_POST['destinataire'];
+  $ajoutNomFichier = $_POST["fileName"];
 
-  $ajoutExpediteur = htmlspecialchars($_POST["expediteur"]);
-  $ajoutDestinataire = htmlspecialchars($_POST['destinataire']);
-  $ajoutNomFichier = htmlspecialchars($_POST["fileName"]);
 
   // Retourne un identifiant unique basé sur l'horodatage, sous la forme d'une chaîne de 13 caractères
   $idBDD = uniqid();
-
+  // Appel à la fonction pour entrer les infos de l'input dans la BDD
   insertName($ajoutDestinataire, $ajoutExpediteur, $cheminetNomDefinitif, $ajoutNomFichier, $idBDD);
-  
+  // $cheminBDD = Résultat de la fonction
   $cheminBDD = recupereFichier($idBDD);
 }
 
@@ -64,7 +63,7 @@ include('Views/resultatView.php');
 // ========================================= GENERATION, ENVOI DU MAIL ===================================================
 
 
-$mail = htmlspecialchars($_POST['destinataire']); // Déclaration de l'adresse de destination.
+$mail = $_POST['destinataire']; // Déclaration de l'adresse de destination.
 
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 
@@ -84,7 +83,7 @@ else
 
 // Déclaration des messages au format texte et au format HTML.
 
-$message_txt = "Wubba lubba dub dub! ".htmlspecialchars($_POST['expediteur'])." vous a envoyé des fichiers ! Cliquez sur le bouton ci-dessous pour les télécharger ! © R&M Transfer ";
+$message_txt = "Wubba lubba dub dub! ".$_POST['expediteur']." vous a envoyé des fichiers ! Cliquez sur le bouton ci-dessous pour les télécharger ! © R&M Transfer ";
 
 $message_html = '<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><title></title><!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style type="text/css">#outlook a { padding:0; }
 .ReadMsgBody { width:100%; }
@@ -121,8 +120,8 @@ $boundary = "-----=".md5(rand());
 $sujet = "Transfert de fichiers";
 
 //=====Création du header de l'e-mail.
-$header = "From: ".htmlspecialchars($_POST['expediteur']).$passage_ligne;
-$header.= "Reply-to: ".htmlspecialchars($_POST['expediteur']).$passage_ligne;
+$header = "From: ".$_POST['expediteur'].$passage_ligne;
+$header.= "Reply-to: ".$_POST['expediteur'].$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 
