@@ -4,7 +4,7 @@ html {
   }
   body {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     margin: 50px auto;
     width: 512px;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -88,6 +88,7 @@ html {
   position: relative;
   box-shadow: 3px 5px rgba(242,242,242,0.4);
   border-radius:20px;
+
 }
 #contact input[type="text"],
 #contact input[type="email"],
@@ -126,12 +127,16 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 
 .pickle
 {
-  padding-left: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .success
 {
-  padding-left: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #snuffles
@@ -151,16 +156,15 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
 
-  /* ****************************Media Queries**************************** */
+  /* **************************** Media Queries **************************** */
 
-@media screen and (max-width: 414px) {
+@media (max-width: 480px) and (orientation: portrait) {
   body {
     background: url('../Images/rick2.png') !important;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 12px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   #logoH
   {
@@ -183,7 +187,7 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
   .container {
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: relative !important;
     box-shadow: 0px 0px;
     border-radius: 0px;
     top: 0;
@@ -232,8 +236,9 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 
   #snuffles
 {
-  display: initial;
-  padding-left: 50px;
+  display: block;
+  margin-right: 35vw;
+  margin-left: auto;
 }
 
 
@@ -244,4 +249,138 @@ font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
     background-repeat: no-repeat !important;
     background-size: cover !important;
   }
+}
+
+
+@media (max-width: 812px) and (orientation: portrait) { /* Tablette portrait, grands smartphones */
+
+  .container
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+  }
+
+  
+}
+
+@media (max-width: 812px) and (orientation: landscape) { /* Grands smartphones paysage */
+
+  body {
+    background: url('../Images/rick2.png') !important;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    overflow: hidden;
+    margin: 0;
+  }
+  #logoH
+  {
+    padding: 20px;
+    max-width: 300px;
+  }
+  #logo
+  {
+    display: none;
+  }
+  header
+  {
+    /* display: block;
+    position: fixed;
+    top: 0;
+    background : #303030;
+    width: 100%;
+    z-index: 1; */
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative !important;
+    box-shadow: 0px 0px;
+    border-radius: 0px;
+    top: 0;
+  }
+  .mdl-button--file input {
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+  .mdl-textfield__label{
+  color:rgb(10,10,10);  
+  }
+  .mdl-textfield__input{
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+    border : none;
+    font-size: 16px !important;
+  }
+  #contact {
+    position: fixed;
+    bottom: 0;
+    background: #F9F9F9;
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  #contact h3 {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  #contact h4 {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+  }
+
+  .message 
+  {
+    font-size: 18px;
+  }
+
+  #snuffles
+{
+  display: none;
+}
+
+@media (max-width: 480px) and (orientation: portrait) { /* Smartphones portrait */
+
+  
+
+}
+
+@media (max-height: 480px) and (orientation: portrait) { /* Petits smartphones */
+
+
+
+}
+
+@media (max-width: 480px) and (orientation: landscape) { /* Petits smartphones paysage */
+
+
+
+}
+
+@media (max-height: 320px) and (orientation: portrait) { /* Mini smartphones */
+
+
+
+}
+
+@media (max-height: 320px) and (orientation: landscape) { /* Mini smartphones paysage */
+
+
+
 }
