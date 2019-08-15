@@ -24,9 +24,9 @@
     <div class="container">
         <form id="contact" action="resultat" method="post" enctype="multipart/form-data">
 
-            <h3><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></h3>
+            <div><a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logo" id="logo" src="Assets/Images/logo.png"></a></div>
             <img id="snuffles" src="Assets/Images/snuffles.png" alt="">
-            <h4 class="francais">Transférez vos fichiers vers un autre univers !</h4>
+            <h1 class="francais">Transférez vos fichiers vers un autre univers !</h1>
 
             <!-- Email Expediteur -->
             <div id="expediteurErreur" class="messageErreur"></div>
@@ -52,18 +52,19 @@
                 <p class="errorMessage"></p>
             </div>
 
-            <!-- Le bouton permettant de linker le fichier -->   
-            <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
-                <i class="material-icons ">attach_file</i>
-                <input type="file" name="fichier_upload" multiple="multiple" id="fichier_upload">
-            </div>
+
                 
 
             <!-- Le bouton envoyer -->   
             <div> 
                 <fieldset>
-                        <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
+                    <button name="submitBtn" type="submit" id="contact-submit" data-submit="...Sending" class="francais mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Transférer
                     </button>
+                    <!-- Le bouton permettant de linker le fichier -->   
+                    <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+                        <i class="material-icons ">attach_file</i>
+                        <input type="file" name="fichier_upload" multiple="multiple" id="fichier_upload">
+                    </div>
                 </fieldset>
             </div>
         </form>
