@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div id="wrapper">
     <header>
         <nav class="navbar navbar-expand justify-content-md-center">
         <a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
@@ -66,6 +67,7 @@
                 </fieldset>
             </div>
         </form>
+    </div>
 
     <script src="Assets/JS/main.js"></script>
 </body>
