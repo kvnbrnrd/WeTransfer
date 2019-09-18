@@ -15,7 +15,7 @@
 <body>
     <div id="wrapper">
     <header>
-        <nav class="navbar navbar-expand justify-content-md-center">
+        <nav>
         <a href="https://kevinb269.promo-24.codeur.online/mesprojets/WeTransfer/index.php"><img class="logoH" id="logoH" src="Assets/Images/logo.png"></a>
         </nav>
     </header>

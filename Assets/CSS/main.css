@@ -151,70 +151,195 @@ fieldset
 
   /* **************************** Media Queries **************************** */
 
-@media (max-width: 480px) and (orientation: portrait) {
+  @media (max-width: 480px) and (orientation: portrait) { /* Style général du responsive mobile */
   
-  body 
-  {
-    background: url('../Images/rick2.png') !important;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-    overflow: hidden;
+    body 
+    {
+      background: url('../Images/rick2.png') !important;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      font-size: 12px;
+      overflow: hidden;
+    }
+  
+    #wrapper
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    nav 
+    {
+      text-align: center;
+    }
+  
+    #logoH
+    {
+      padding: 30px;
+      max-width: 300px;
+      padding-bottom: 20px;
+    }
+  
+    #logo
+    {
+      display: none;
+    }
+  
+    header
+    {
+      display: block;
+      position: fixed;
+      top: 0;
+      background : #303030;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .container
+    {
+      width: 100%;
+      height: 100%;
+    }
+  
+    #contact
+    {
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+    }
+  
+    #snuffles
+    {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
   }
 
-  #wrapper
-  {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #logoH
-  {
-    padding: 30px;
-    max-width: 300px;
-    padding-bottom: 20px;
-  }
-
-  #logo
-  {
-    display: none;
-  }
-
-  header
-  {
-    display: block;
-    position: fixed;
-    top: 0;
-    background : #303030;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .container
-  {
-    width: 100%;
-    height: 100%;
-  }
-
-  #contact
-  {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
+@media (max-width: 480px) and (max-height: 700px) and (orientation: portrait) { /* Spécifique : Mobiles de taille normale */
+  
 
   #snuffles
   {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     height: 120px;
     width: 120px;
   }
 
+}
+
+@media (max-width: 480px) and (min-height: 701px) and (orientation: portrait) { /* Spécifique : Mobiles plus grands */
+  
+  #snuffles
+  {
+    margin-top: 50px;
+    height: 170px;
+    width: 170px;
+  }
 
 }
+
+@media (max-width: 480px) and (min-height: 800px) and (orientation: portrait) { /* Spécifique : Grands mobiles */
+  
+  #snuffles
+  {
+    margin-top: 50px;
+    height: 170px;
+    width: 170px;
+  }
+
+
+.mdl-textfield__label{
+  font-size: 20px !important;
+}
+
+h1 
+{
+  font-size: 26px !important;
+  margin-top: 40px;
+}
+
+.mdl-textfield
+{
+  padding: 25px 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+}
+
+@media (max-width: 480px) and (min-height: 845px) and (orientation: portrait) { /* Spécifique : Très grands mobiles */
+  
+  #snuffles
+  {
+    margin-top: 60px;
+    height: 190px;
+    width: 190px;
+  }
+
+
+.mdl-textfield__label{
+  font-size: 20px !important;
+}
+
+h1 
+{
+  font-size: 26px !important;
+  margin-top: 40px;
+}
+
+.mdl-textfield
+{
+  padding: 25px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+}
+
+@media (max-width: 480px) and (max-height: 570px) and (orientation: portrait) { /* Spécifique : Iphone5 */
+
+  #logoH
+  {
+    padding: 30px;
+    max-width: 240px;
+    padding-bottom: 20px;
+  }
+  
+  #snuffles
+  {
+    margin-top: 0px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .container
+  {
+    justify-content: center;
+  }
+
+  h1 
+  {
+    font-size: 18px !important;
+    margin-top: 20px;
+  }
+
+  .mdl-textfield
+  {
+    padding: 15px 0;
+  }
+
+
+  .mdl-textfield__label
+  {
+    font-size: 14px !important;
+  }
+
+
+}
+
 @media screen and (min-height: 768px) and (max-width: 1280px) {
   body {
     background: url('../Images/rick2.png') !important;
@@ -224,14 +349,6 @@ fieldset
 }
 
 
-@media (max-width: 812px) and (orientation: portrait) { /* Tablette portrait, grands smartphones */
-
-  .container
-  {
-    box-shadow: none;
-  }
-
-}
 
 @media (max-width: 812px) and (orientation: landscape) { /* Grands smartphones paysage */
 
